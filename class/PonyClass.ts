@@ -1,4 +1,4 @@
-import Toy from './Toy'
+import Toy from './ToyClass'
 
 export default class Pony extends Toy {
     private static _nb: number = 1;

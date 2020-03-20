@@ -1,4 +1,4 @@
-import Toy from './Toy'
+import Toy from './ToyClass'
 
 export default class Figurine extends Toy{
 
