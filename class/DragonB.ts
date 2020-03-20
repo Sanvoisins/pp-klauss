@@ -1,6 +1,6 @@
-import Figurine from './FigurineClass'
+import Fig from './Fig'
 
-export enum DBHeroe {
+export enum DragonBHeroe {
     SANGOKU,
     BEJITA,
     BEERUS,
@@ -8,12 +8,12 @@ export enum DBHeroe {
 }
 
 
-export default class DragonBall extends Figurine {
+export default class DragonB extends Fig {
 
-    private _character: DBHeroe
+    private _character: DragonBHeroe
 
 
-    constructor(type: DBHeroe) {
+    constructor(type: DragonBHeroe) {
 
         super()
 
@@ -23,11 +23,11 @@ export default class DragonBall extends Figurine {
 
 
     public getType(): string {
-        return 'Dragon Ball figurine ' + DBHeroe[this._character]
+        return 'figurine Dragon Ball  ' + DragonBHeroe[this._character]
     }
 
     public isMoved(): void {
-        console.log('Kamé Hamé Ha!')
+        console.log('KaméHaméHa!')
     }
 
     public dragonBallSence(): void {
